@@ -1,0 +1,9 @@
+com\hrms\Pages\HomePageElements.class
+com\hrms\testCases\LoginTestCases.class
+com\hrms\Pages\AddCustomerPageElements.class
+com\hrms\utils\ConfigReader.class
+com\hrms\utils\CommonMethods.class
+com\hrms\utils\Constants.class
+com\hrms\BaseClass\BaseClass.class
+com\hrms\Pages\LoginPageElements.class
+com\hrms\utils\ExcelUtility.class

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24070" started-at="2022-02-18T11:59:37Z" finished-at="2022-02-18T12:00:02Z">
+    <groups>
+      <group name="smoke">
+        <method signature="LoginTestCases.validCerdentails()[pri:0, instance:com.hrms.testCases.LoginTestCases@4667ae56]" name="validCerdentails" class="com.hrms.testCases.LoginTestCases"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Test" duration-ms="24070" started-at="2022-02-18T11:59:37Z" finished-at="2022-02-18T12:00:02Z">
+      <class name="com.hrms.testCases.LoginTestCases">
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.hrms.testCases.LoginTestCases@4667ae56]" name="generateReport" is-config="true" duration-ms="731" started-at="2022-02-18T11:59:37Z" finished-at="2022-02-18T11:59:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.hrms.testCases.LoginTestCases@4667ae56]" name="openBrowser" is-config="true" duration-ms="18370" started-at="2022-02-18T11:59:38Z" finished-at="2022-02-18T11:59:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="validCerdentails()[pri:0, instance:com.hrms.testCases.LoginTestCases@4667ae56]" name="validCerdentails" duration-ms="3115" started-at="2022-02-18T11:59:57Z" finished-at="2022-02-18T12:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCerdentails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.testCases.LoginTestCases@4667ae56]" name="tearDown" is-config="true" duration-ms="1023" started-at="2022-02-18T12:00:00Z" finished-at="2022-02-18T12:00:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="writeReport()[pri:0, instance:com.hrms.testCases.LoginTestCases@4667ae56]" name="writeReport" is-config="true" duration-ms="475" started-at="2022-02-18T12:00:01Z" finished-at="2022-02-18T12:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeReport -->
+      </class> <!-- com.hrms.testCases.LoginTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

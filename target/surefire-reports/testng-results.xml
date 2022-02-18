@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="14924" started-at="2022-02-15T13:26:56Z" finished-at="2022-02-15T13:27:10Z">
+    <groups>
+      <group name="smoke">
+        <method signature="LoginTestCases.validCerdentails()[pri:0, instance:com.hrms.testCases.LoginTestCases@1efbd816]" name="validCerdentails" class="com.hrms.testCases.LoginTestCases"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="Test" duration-ms="14924" started-at="2022-02-15T13:26:56Z" finished-at="2022-02-15T13:27:10Z">
+      <class name="com.hrms.testCases.LoginTestCases">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.hrms.testCases.LoginTestCases@1efbd816]" name="openBrowser" is-config="true" duration-ms="8101" started-at="2022-02-15T13:26:56Z" finished-at="2022-02-15T13:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="validCerdentails()[pri:0, instance:com.hrms.testCases.LoginTestCases@1efbd816]" name="validCerdentails" duration-ms="5731" started-at="2022-02-15T13:27:04Z" finished-at="2022-02-15T13:27:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCerdentails -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hrms.testCases.LoginTestCases@1efbd816]" name="tearDown" is-config="true" duration-ms="1048" started-at="2022-02-15T13:27:09Z" finished-at="2022-02-15T13:27:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.hrms.testCases.LoginTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
