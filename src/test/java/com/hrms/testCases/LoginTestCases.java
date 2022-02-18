@@ -12,7 +12,7 @@ import com.hrms.utils.ExcelUtility;
 
 public class LoginTestCases extends BaseClass {
 
-	@Test(groups= {"smoke"})
+	@Test(groups = { "smoke" })
 	public void validCerdentails() {
 		LoginPageElements loginpage = new LoginPageElements();
 		CommonMethods.SendData(loginpage.username, ConfigReader.getProperty("Username"));
@@ -21,11 +21,10 @@ public class LoginTestCases extends BaseClass {
 		String actualTitle = BaseClass.driver.getTitle();
 		System.out.println(actualTitle);
 		Assert.assertEquals(actualTitle, "OrangeHRM", "titles are not matching");
-	 
-	
+
 	}
-	
-	@Test(groups= {"sanity"})
+
+	@Test(groups = { "sanity" })
 	public void inValidUsername() {
 		LoginPageElements loginpage = new LoginPageElements();
 		CommonMethods.SendData(loginpage.username, "Admin2345");
@@ -34,30 +33,29 @@ public class LoginTestCases extends BaseClass {
 		String actualText = loginpage.errorMessage.getText();
 		Assert.assertEquals(actualText, "Invalid credentials", "error message did not matched");
 	}
-	@Test(groups= {"sanity"})
+
+	@Test(groups = { "sanity" })
 	public void inValidPassword() {
 		LoginPageElements loginpage = new LoginPageElements();
-        CommonMethods.SendData(loginpage.username, ConfigReader.getProperty("Username"));
+		CommonMethods.SendData(loginpage.username, ConfigReader.getProperty("Username"));
 		CommonMethods.SendData(loginpage.password, "Java1234");
 		CommonMethods.clickAction(loginpage.loginButton);
 		String actualText = loginpage.errorMessage.getText();
 		Assert.assertEquals(actualText, "Invalid credentials", "error message did not matched");
 	}
 
-	
-	@Test(dataProvider="InvalidLoginData",groups= {"regression"})
-	public void dataDrivenTest(String Username,String Password,String ErrorMessage) {
+	@Test(dataProvider = "InvalidLoginData", groups = { "regression" })
+	public void dataDrivenTest(String Username, String Password, String ErrorMessage) {
 		LoginPageElements loginpage = new LoginPageElements();
-        CommonMethods.SendData(loginpage.username, Username);
+		CommonMethods.SendData(loginpage.username, Username);
 		CommonMethods.SendData(loginpage.password, Password);
 		CommonMethods.clickAction(loginpage.loginButton);
 		String actualText = loginpage.errorMessage.getText();
 		Assert.assertEquals(actualText, ErrorMessage, "error message did not matched");
 	}
 
-	
-	@DataProvider(name="InvalidLoginData")
-	public Object[][] getData(){
+	@DataProvider(name = "InvalidLoginData")
+	public Object[][] getData() {
 		return ExcelUtility.excelIntoArray("C:\\Users\\Pranitha Regalla\\Desktop\\TestData.xlsx", "Sheet2");
 	}
 }
